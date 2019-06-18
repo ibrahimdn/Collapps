@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,74 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="label_collapse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-D7-8f4">
+                                <rect key="frame" x="0.0" y="110" width="414" height="786"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="150" id="pyi-OL-qLu" customClass="tableCell" customModule="label_collapse" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pyi-OL-qLu" id="xeL-0J-YXm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1l-HX-3CD">
+                                                    <rect key="frame" x="20" y="11" width="374" height="89"/>
+                                                    <string key="text">Selam arkadaşlar, kullandığımız bir e-ticaret sistemini webview içine koyarak markete yollasak, Apple 4.2 maddesinden dolayı reject ediyor diye biliyorum. Ancak ticimax uygulamaları gördüğüm kadarıyla aynı mantıkta ama bir sürü uygulama var yayında. Birkaç arkadaşım e-ticaret sitelerine uygulama yaptırmak istiyorlar, ben de native yazıp daha iyi bir kullanıcı deneyimi yaşatma taraftarıyım ama çıkan bütçeler yüksek kalıyor. Sizin bu konu hakkındaki fikirleriniz nedir? Sizce uygulamanın reject edilmemesi için sadece webview içinde siteyi açmak dışında bazı özellikler eklesek kabul olur mu?Selam arkadaşlar, kullandığımız bir e-ticaret sistemini webview içine koyarak markete yollasak, Apple 4.2 maddesinden dolayı reject ediyor diye biliyorum. Ancak ticimax uygulamaları gördüğüm kadarıyla aynı mantıkta ama bir sürü uygulama var yayında. Birkaç arkadaşım e-ticaret sitelerine uygulama yaptırmak istiyorlar, ben de native yazıp daha iyi bir kullanıcı deneyimi yaşatma taraftarıyım ama çıkan bütçeler yüksek kalıyor. Sizin bu konu hakkındaki fikirleriniz nedir? Sizce uygulamanın reject edilmemesi için sadece webview içinde siteyi açmak dışında bazı özellikler eklesek kabul olur mu?</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="u1l-HX-3CD" secondAttribute="bottom" constant="39" id="MOX-36-onc"/>
+                                                <constraint firstItem="u1l-HX-3CD" firstAttribute="top" secondItem="xeL-0J-YXm" secondAttribute="topMargin" id="gbq-r7-MnT"/>
+                                                <constraint firstItem="u1l-HX-3CD" firstAttribute="trailing" secondItem="xeL-0J-YXm" secondAttribute="trailingMargin" id="uzS-gE-yRB"/>
+                                                <constraint firstItem="u1l-HX-3CD" firstAttribute="leading" secondItem="xeL-0J-YXm" secondAttribute="leadingMargin" id="w1J-iM-dDe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btn" destination="rxL-eM-PM5" id="tRy-W8-dsK"/>
+                                            <outlet property="lbl" destination="u1l-HX-3CD" id="aVx-SZ-WVR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-eM-PM5">
+                                <rect key="frame" x="0.0" y="72" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rxL-eM-PM5" secondAttribute="height" multiplier="187:15" id="zLG-zf-Ziz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showMoreBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBZ-fn-JJy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rxL-eM-PM5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Nm-5B-2RE"/>
+                            <constraint firstItem="fpR-D7-8f4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kxw-iU-L2X"/>
+                            <constraint firstItem="fpR-D7-8f4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="MJ7-Ap-duT"/>
+                            <constraint firstAttribute="trailing" secondItem="rxL-eM-PM5" secondAttribute="trailing" constant="40" id="UMx-0T-JI4"/>
+                            <constraint firstAttribute="bottom" secondItem="rxL-eM-PM5" secondAttribute="bottom" constant="794" id="fB4-B0-Y2G"/>
+                            <constraint firstItem="fpR-D7-8f4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="414" id="oMS-IJ-ka1"/>
+                            <constraint firstAttribute="bottom" secondItem="fpR-D7-8f4" secondAttribute="bottom" id="sMX-nr-2P1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="fpR-D7-8f4" id="x00-eN-oTJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
